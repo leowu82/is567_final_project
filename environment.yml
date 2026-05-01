@@ -1,0 +1,23 @@
+name: fraud_detect
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cudatoolkit=11.8
+  - pip:
+    - torch
+    - transformers
+    - datasets
+    - sentence-transformers
+    - scikit-learn
+    - pandas
+    - numpy
+    - faiss-cpu
+    - kaggle
+    - python-dotenv
+    - joblib
+    - tqdm
+    - pytest
