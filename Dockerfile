@@ -14,6 +14,8 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 WORKDIR /workspace
 COPY environment.yml /workspace/environment.yml
 
+ENV PYTHONPATH=/workspace
+
 RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main && \
     conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r && \
     conda update -n base -c defaults conda -y && \

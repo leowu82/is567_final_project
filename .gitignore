@@ -5,3 +5,8 @@ data/processed/
 models/
 __pycache__/
 *.pyc
+.venv/
+.vscode/
+condaenv.*.requirements.txt
+.env.*
+!.env.example

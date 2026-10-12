@@ -1,15 +1,17 @@
 name: fraud_detect
 channels:
   - pytorch
+  - nvidia
   - conda-forge
   - defaults
 dependencies:
   - python=3.10
   - pip
-  - cudatoolkit=11.8
+  - pytorch
+  - pytorch-cuda=11.8
   - pip:
-    - torch
     - transformers
+    - accelerate
     - datasets
     - sentence-transformers
     - scikit-learn
